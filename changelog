@@ -1,0 +1,45 @@
+# May 23 
+The power-up is represented by a green rectangle that appears above the player character when active.
+Power-ups spawn as coins every 10 seconds using the spawnPowerUp() function.
+When the player collides with a power-up coin, the activatePowerUp() function is called, which sets powerUpActive to true, increases the player's speed, and starts a timer for the power-up duration.
+After the power-up duration (5 seconds in this example), the deactivatePowerUp() function is called, which restores the player's speed and clears the power-up timer.
+The checkCollision() function is modified to handle power-up collisions separately from regular coin collisions.
+
+
+Wave 2: 
+Power-ups:
+
+The power-up is now a unique item with a green color.
+When the player collects a power-up, a sound effect is played.
+
+
+Obstacles:
+
+Obstacles are spawned every 3 seconds and move downwards.
+If the player collides with an obstacle, the game ends.
+
+
+Checkpoints:
+
+Checkpoints are spawned every 20 seconds.
+When the player collides with a checkpoint, a sound effect is played, and the checkpoint disappears.
+
+
+Boss battles:
+
+When the player's score reaches 50, a boss battle is triggered.
+The boss has a health bar, and the player needs to collide with the boss multiple times to defeat it.
+Defeating the boss grants bonus points.
+
+
+Sound effects and background music:
+
+Background music is played during the game and loops continuously.
+Sound effects are played for power-ups, checkpoints, and boss battles.
+
+
+Main menu screen:
+
+The main menu screen is not included in this code snippet, but you can create a separate HTML page with options to start a new game, view high scores, and adjust settings.
+
+

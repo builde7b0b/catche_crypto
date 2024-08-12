@@ -34,6 +34,8 @@ header {
 h1 {
     color: white;
     background-color: #d62975;
+    margin-bottom: 20px;
+
 }
 
 main {
@@ -42,10 +44,15 @@ main {
 
 .container{ 
     background-color: #d62975;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 ul{
     color:white;
+    list-style-type: none;
+    padding: 0;
 
 }
 
@@ -144,13 +151,17 @@ footer {
         <img src="/assets/logo.png" alt="Game Logo" class="logo">
     </header>
     <div class="container">
-        <h1>Catch the Crypto Coins</h1>
-        <ul>
-            <li><a href="game.html">Start New Game</a></li>
-            <li><a href="highscores.html">View High Scores</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
+        <h1>High Scores</h1>
+        <table id="highScoreTable">
+            <tr>
+                <th>Rank</th>
+                <th>Score</th>
+            </tr>
+        </table>
+        <a href="index.html">Back to Main Menu</a>
     </div>
+    <script src="highscores.js"></script>
+</body>
 
     <footer>
         <a href="" target="_blank" rel="noopener noreferrer">

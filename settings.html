@@ -140,17 +140,24 @@ footer {
     </style>
 </head>
 <body>
-    <header>
-        <img src="/assets/logo.png" alt="Game Logo" class="logo">
-    </header>
     <div class="container">
-        <h1>Catch the Crypto Coins</h1>
-        <ul>
-            <li><a href="game.html">Start New Game</a></li>
-            <li><a href="highscores.html">View High Scores</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
+        <h1>Settings</h1>
+        <div>
+            <label for="soundToggle">Sound:</label>
+            <input type="checkbox" id="soundToggle" checked>
+        </div>
+        <div>
+            <label for="difficultySelect">Difficulty:</label>
+            <select id="difficultySelect">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <a href="index.html">Back to Main Menu</a>
     </div>
+    <script src="settings.js"></script>
+</body>
 
     <footer>
         <a href="" target="_blank" rel="noopener noreferrer">

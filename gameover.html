@@ -49,31 +49,6 @@ ul{
 
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
 canvas {
     border: 1px solid #333;
     background-image: linear-gradient(to bottom right, #61d9dc, #e52e71);
@@ -144,13 +119,19 @@ footer {
         <img src="/assets/logo.png" alt="Game Logo" class="logo">
     </header>
     <div class="container">
-        <h1>Catch the Crypto Coins</h1>
-        <ul>
-            <li><a href="game.html">Start New Game</a></li>
-            <li><a href="highscores.html">View High Scores</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <a href="index.html">Back to Main Menu</a>
     </div>
+    <script>
+        // Get the score from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+
+        // Display the score on the game over screen
+        document.getElementById('finalScore').textContent = score;
+    </script>
+</body>
 
     <footer>
         <a href="" target="_blank" rel="noopener noreferrer">
