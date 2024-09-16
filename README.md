@@ -54,6 +54,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Cryptocurrency icons provided by CryptoIcons
 - Game background image by Freepik
 
-Developed with ❤️ by [Your Name]
+Developed with ❤️ by Eugene
 
 Happy Crypto Catching! 🎉
